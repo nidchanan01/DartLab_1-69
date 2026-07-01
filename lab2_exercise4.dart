@@ -3,10 +3,13 @@ void main() {
   String city = 'Nakhon Sawan';
 
   int middleNameLength = middleName?.length ?? 0;
-  print('middleNameLength (??) : $middleNameLength');
+  print('Middle name length : $middleNameLength');
   print('City length : ${city.length}');
-  
-  print('Middle Name before : $middleName');
+  print('Middle Name before assignment : $middleName');
+
   middleName ??= 'N/A';
-  print('Middle Name after : $middleName');
+  print('Middle Name after assignment : $middleName');
+  
+  middleName ??= 'Someting Else';
+  print('Middle name after second assignment : $middleName');
 }
